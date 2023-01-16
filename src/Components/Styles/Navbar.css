@@ -1,0 +1,14 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2rem !important;
+  color:lightgreen !important;
+}
+
+.nav-link {
+  font-size: larger !important;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid lightgreen !important;
+  /* text-decoration: underline !important; */
+}
