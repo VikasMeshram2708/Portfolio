@@ -1,0 +1,12 @@
+.title {
+  color: lightgreen !important;
+}
+
+.title:hover {
+  /* text-decoration: underline !important; */
+  border-bottom: 5px solid lightgreen !important;
+}
+
+.desc {
+  color: lightgreen !important;
+}
