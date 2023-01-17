@@ -1,22 +1,37 @@
-import React from 'react';
+import './Styles/Projects.css';
+
+import Data from '../Data/index';
+
+import React,{ useEffect, useState } from 'react';
+
+import { ReposBody } from '../Interfaces/ReposBody';
 
 const Projects = () => {
+  const [items, setItems] = useState<ReposBody []>([]);
+
+  useEffect(() => {
+    setItems(Data);
+    console.log(items);
+  },[]);
+
   return (
     <>
-      <div className="container mt-3">
-        <div className="row featurette">
-          <div className="col-md-7">
-            <h2 className="featurette-heading fw-normal lh-1">First featurette heading. <span className="text-muted">It’ll blow your mind.</span></h2>
-            <p className="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-          </div>
-          <div className="col-md-5">
-            <div className="container">
-
-              <img src="https://source.unsplash.com/300x400/?technology" alt="Image" />
+      <h3 className='text-center mt-3 myTitle'>My Projects</h3>
+      <ul>
+        {items.map((elem) => {
+          return (
+            <div key={elem.id} className='container'>
+              <img src={elem.avatar_img} alt="images" className='card-img-top img-links' />
+              <div className="text-center">
+                <li className='list-items-title'>{elem.title}</li>
+                <p className='mt-3'><i>{elem.description}</i></p>
+                <i className='list-items-link'>{elem.link}</i>
+              </div>
+              <hr />
             </div>
-          </div>
-        </div>
-      </div>
+          );
+        })}
+      </ul>
     </>
   );
 };

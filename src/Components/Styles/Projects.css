@@ -1,0 +1,28 @@
+.myTitle {
+  color: lightgreen !important;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.myTitle:hover {
+  text-decoration: underline;
+}
+
+.list-items-title {
+  font-size: 1.5rem;
+  margin:.8rem 0rem 0rem 0rem;
+  list-style-type: none;
+}
+
+.list-items-title:hover {
+  border-bottom: 3px solid lightgreen;
+}
+
+.img-links {
+  border-radius: .5rem;
+}
+
+.list-items-link:hover {
+  cursor: pointer;
+  border-bottom: 3px solid lightgreen;
+}

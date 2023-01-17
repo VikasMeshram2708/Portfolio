@@ -1,4 +1,3 @@
-import Carosuel from './Components/Carosuel';
 import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Projects from './Components/Projects';
@@ -10,7 +9,6 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Carosuel />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />

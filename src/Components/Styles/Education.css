@@ -1,0 +1,12 @@
+.clg-title {
+  color: lightgreen !important;
+}
+
+.clg-title:hover {
+  text-decoration: underline;
+}
+
+.lead {
+  color: lightgreen !important;
+
+}
