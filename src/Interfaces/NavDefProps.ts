@@ -3,4 +3,5 @@ export interface NavDefProps {
   navItem1:string;
   navItem2: string;
   navItem3: string;
+  navItem4: string;
 }

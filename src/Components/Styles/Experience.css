@@ -1,0 +1,18 @@
+.exp-title {
+  color: lightgreen;
+}
+
+.exp-title:hover {
+  border-bottom: 5px solid lightgreen;
+}
+
+.exp-date {
+  color: lightgreen;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.exp-info {
+  color: lightgreen;
+  font-size: 2rem !important;
+}

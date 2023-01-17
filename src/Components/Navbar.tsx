@@ -22,6 +22,9 @@ const Navbar = (props:NavDefProps) => {
               <li className="nav-item">
                 <Link className="nav-link" to="/dashboard">{props.navItem3}</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/experience">{props.navItem4}</Link>
+              </li>
               <hr />
             </ul>
           </div>
@@ -36,6 +39,7 @@ Navbar.defaultProps = {
   navItem1: 'Projects',
   navItem2: 'Education',
   navItem3: 'Dashboard',
+  navItem4: 'Experience',
 };
 
 export default Navbar;
