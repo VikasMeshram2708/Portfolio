@@ -24,10 +24,6 @@ const Navbar = (props:NavDefProps) => {
               </li>
               <hr />
             </ul>
-            <form className="d-flex">
-              <button className="btn btn-info my-2 my-sm-0" type="submit">Sign Up</button>
-              <button className="mx-3 btn btn-success my-2 my-sm-0" type="submit">Sign In</button>
-            </form>
           </div>
         </div>
       </nav>

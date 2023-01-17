@@ -17,7 +17,7 @@ const Home = (props:HomeProps) => {
 
 Home.defaultProps = {
   title: 'Its Me',
-  description: 'Self motivated and hardworking fresher seeking for an opportunity to work challenging environment to prove my skills and utilize my knowledge and intelligence.'
+  description: 'Enthusiastic engineering graduate with basic knowledge in coding and design. Proficient in C++, HTML, Css & JavaScript, MERN Stack, and TypeScript. Ability to learn new Technologies quickly. Capability to work in teams by providing valuable support.'
 };
 
 export default Home;
