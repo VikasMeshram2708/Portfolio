@@ -1,14 +1,7 @@
 import React from 'react';
 import './Styles/Education.css';
 
-/* 
-EDUCATION
-Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur
-July 2018 - July 2022
-Bachelor of Engineering in Computer Science & Engineering
-8.5 CGPA
-Related courses: Object Oriented Programming, Databases, Data Structures, Software Engineering
-*/
+
 const Education = () => {
   return (
     <div className="container mt-5">
