@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import myImg from '@/public/me/me.jpg'
 
 export default function Hero() {
   return (
@@ -14,7 +15,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-2xl mx-auto flex flex-col gap-4"
+          className="flex flex-col gap-4"
         >
           <h1 className="text-5xl font-extrabold tracking-tight">
             Build Smarter, <span className="dark:text-primary">Scale Faster</span>
@@ -35,13 +36,14 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="overflow-hidden rounded-xl shadow-xl w-full">
+          <Card className="rounded-full border-4 lg:border-primary">
             <Image
-              src="https://is.gd/OmVUU0"
+              src={myImg}
               alt="Vikas Meshram Portfolio"
-              className="object-cover"
-              width={700}
-              height={700}
+              className="bg-cover lg:rounded-full"
+              placeholder="blur"
+              width={350}
+              height={350}
               priority
             />
           </Card>
