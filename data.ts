@@ -141,3 +141,26 @@ export const skills:Skill[] = [
   },
 ];
 
+
+export const lists = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "About",
+    url: "/about",
+  },
+  {
+    title: "Projects",
+    url: "/projects",
+  },
+  {
+    title: "Skills",
+    url: "/skills",
+  },
+  {
+    title: "Hire Me",
+    url: "/hire-me",
+  },
+];
