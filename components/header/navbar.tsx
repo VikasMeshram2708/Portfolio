@@ -37,10 +37,10 @@ export default function Navbar() {
     <header className="border-b shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl md:text-2xl lg:text-4xl font-bold">
-          <Link href="/">Vikas <span className="dark:text-primary">Meshram</span></Link>
+          <Link href="/">Vikas Meshram</Link>
         </h1>
 
-        <NavigationMenu className="hidden md:flex">
+        <NavigationMenu className="hidden md:flex gap-4">
           <NavigationMenuList>
             {lists.map((list) => (
               <NavigationMenuItem key={list.url}>
