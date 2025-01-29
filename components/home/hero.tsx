@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import myImg from '@/public/me/me.jpg'
+import myImg from "@/public/me/me.jpg";
 
 export default function Hero() {
   return (
@@ -18,7 +18,8 @@ export default function Hero() {
           className="flex flex-col gap-4"
         >
           <h1 className="text-5xl font-extrabold tracking-tight">
-            Build Smarter, <span className="dark:text-primary">Scale Faster</span>
+            Build Smarter,{" "}
+            <span className="dark:text-primary">Scale Faster</span>
           </h1>
           <p className="text-lg leading-relaxed text-muted-foreground">
             Passionate Full-Stack Developer crafting AI-powered, scalable web
@@ -26,8 +27,7 @@ export default function Hero() {
             deployment, and performance optimization.
           </p>
           <Button size="lg" className="rounded-lg w-64 font-semibold">
-            <Link href="/projects"></Link>
-            View Projects
+            <Link href="/projects">View Projects</Link>
           </Button>
         </motion.div>
 
