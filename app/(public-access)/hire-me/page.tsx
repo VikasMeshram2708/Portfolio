@@ -95,16 +95,6 @@ const HireMePage: NextPage = () => {
               meshramvikas108@gmail.com
             </a>
           </div>
-          <div className="text-lg font-bold">
-            <span className="block dark:text-primary">Phone:</span>
-            <a href="tel:+919359301387" className="text-lg text-muted-foreground">
-              +91 9359301387
-            </a>
-            <span className="mx-2">|</span>
-            <a href="tel:+918999679318" className="text-lg text-muted-foreground">
-              +91 8999679318
-            </a>
-          </div>
         </div>
       </motion.div>
     </div>

@@ -48,19 +48,29 @@ export const projectData: Project[] = [
   },
 ];
 
-export const skills:Skill[] = [
-  {
-    title: "JavaScript",
-    description: "Expert in JavaScript for web development.",
-    rating: 9,
-  },
+export const skills: Skill[] = [
   {
     title: "React",
     description: "Expert in React for building interactive UIs.",
     rating: 9,
   },
   {
-    title: "Express",
+    title: "Next.js",
+    description: "Expert in React for building interactive UIs.",
+    rating: 8,
+  },
+  {
+    title: "TypeScript",
+    description: "Strong knowledge of TypeScript for building scalable apps.",
+    rating: 8,
+  },
+  {
+    title: "JavaScript",
+    description: "Expert in JavaScript for web development.",
+    rating: 9,
+  },
+  {
+    title: "Express.js",
     description: "Experienced in building RESTful APIs with Express.js.",
     rating: 9,
   },
@@ -70,18 +80,13 @@ export const skills:Skill[] = [
     rating: 9,
   },
   {
-    title: "Version Control",
+    title: "Github",
     description: "Strong understanding of version control systems.",
     rating: 9,
   },
   {
-    title: "Node",
+    title: "Node.js",
     description: "Proficient in Node.js for backend development.",
-    rating: 8,
-  },
-  {
-    title: "TypeScript",
-    description: "Strong knowledge of TypeScript for building scalable apps.",
     rating: 8,
   },
   {
@@ -90,13 +95,14 @@ export const skills:Skill[] = [
     rating: 8,
   },
   {
-    title: "No-SQL",
-    description: "Experienced with NoSQL databases for flexible data models.",
+    title: "Postgresql",
+    description:
+      "Experienced with Postgresql databases for flexible data models.",
     rating: 8,
   },
   {
-    title: "Redux",
-    description: "Experienced in state management using Redux.",
+    title: "Redux Toolkit",
+    description: "Experienced in state management using Redux Toolkit.",
     rating: 8,
   },
   {
@@ -105,42 +111,26 @@ export const skills:Skill[] = [
     rating: 8,
   },
   {
-    title: "OOP",
-    description: "Strong knowledge of object-oriented programming concepts.",
-    rating: 8,
-  },
-  {
-    title: "Js-Dom",
-    description: "Proficient in manipulating the DOM using JavaScript.",
-    rating: 8,
-  },
-  {
-    title: "AWS Amplify",
-    description: "Skilled in AWS Amplify for cloud development.",
-    rating: 7,
-  },
-  {
-    title: "Amplify",
-    description: "Familiar with AWS Amplify for deployment.",
-    rating: 7,
-  },
-  {
-    title: "Unit Testing",
-    description: "Experienced in writing unit tests for applications.",
-    rating: 7,
-  },
-  {
-    title: "Cypress",
-    description: "Experienced in end-to-end testing with Cypress.",
-    rating: 7,
-  },
-  {
     title: "C++",
     description: "Experienced in object-oriented programming with C++.",
     rating: 7,
   },
+  {
+    title: "OOPs",
+    description: "Strong knowledge of object-oriented programming concepts.",
+    rating: 8,
+  },
+  {
+    title: "AWS",
+    description: "Skilled in AWS Amplify for cloud development.",
+    rating: 7,
+  },
+  {
+    title: "Cypress",
+    description: "Experienced in end-to-end, unit testing with Cypress.",
+    rating: 7,
+  },
 ];
-
 
 export const lists = [
   {

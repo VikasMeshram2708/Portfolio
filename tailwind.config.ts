@@ -57,7 +57,8 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		animation: {
-  			shine: 'shine var(--duration) infinite linear'
+  			shine: 'shine var(--duration) infinite linear',
+  			grid: 'grid 15s linear infinite'
   		},
   		keyframes: {
   			shine: {
@@ -69,6 +70,14 @@ export default {
   				},
   				to: {
   					'background-position': '0% 0%'
+  				}
+  			},
+  			grid: {
+  				'0%': {
+  					transform: 'translateY(-50%)'
+  				},
+  				'100%': {
+  					transform: 'translateY(0)'
   				}
   			}
   		}
