@@ -10,12 +10,14 @@ import {
 import { motion } from "motion/react";
 import { Github, View } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 type ProjectCardProps = {
-  data: Project[];
+  data: Project;
 };
 
 export default function ProjectCard({ data }: ProjectCardProps) {
+  // console.log("g", data.github_url);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -30,29 +32,29 @@ export default function ProjectCard({ data }: ProjectCardProps) {
               animate={{ scale: 1 }}
               transition={{ duration: 0.3 }}
             >
-              {data[0]?.title}
+              {data.title}
             </motion.h1>
           </CardTitle>
           <CardDescription className="text-base leading-relaxed">
-            {data[0]?.description}
+            {data.description}
           </CardDescription>
         </CardHeader>
         <CardContent className="flex items-center gap-2 justify-between">
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <Button variant={"outline"} asChild>
-              <a href={data[0]?.github_url} target="_blank">
+              <Link href={data.github_url} target="_blank">
                 <Github />
                 Github
-              </a>
+              </Link>
             </Button>
           </motion.div>
-          {data[0]?.demo_url && (
+          {data.demo_url && (
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Button className="rounded-full" asChild>
-                <a href={data[0]?.demo_url} target="_blank">
+                <Link href={data.demo_url} target="_blank">
                   <View />
                   Demo
-                </a>
+                </Link>
               </Button>
             </motion.div>
           )}

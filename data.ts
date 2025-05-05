@@ -9,6 +9,14 @@ export const projectData: Project[] = [
   },
   {
     id: "2",
+    title: "Trave Log",
+    description:
+      "Capture your adventures with Wanderlog Chronicles — your personal travel journal to document memories, uncover hidden gems, and share local travel stories.",
+    github_url: "https://github.com/VikasMeshram2708/Travel-Log.git",
+    demo_url: "https://travel-log-ten-swart.vercel.app",
+  },
+  {
+    id: "3",
     title: "Email Builder: Generate professional email templates",
     description:
       "Effortless email eemplate ereation with Email Builder. The Email Builder allows users to create professional email templates in under 5 minutes, with no coding required. Real-Time Preview: Features 100% live editing, enabling users to see changes instantly and ensuring pixel-perfect designs. Advanced Customization Options: Users can easily replace logos, update text elds (title and description), and add custom images to personalize their email templates. Download and View Source Code Features: Users can download the nalized HTML email template directly or view the source code for advanced modications, catering to both non-developers and developers.",
@@ -16,14 +24,14 @@ export const projectData: Project[] = [
     demo_url: "https://email-builder-kohl.vercel.app",
   },
   {
-    id: "3",
+    id: "4",
     title: "Task Management System",
     description:
       "Task Management System is a comprehensive application built with Next.js, TypeScript, and Prisma, following the latest best practices. It features a dynamic drag-and-drop interface that allows users to move tasks seamlessly between different statuses, automatically updating the task status upon drop. This enhances workflow efficiency by enabling easy organization and tracking of tasks across various stages. With secure authentication provided by NextAuth, users can confidently manage their tasks in a protected environment. Deployed on Vercel for optimal performance and accessibility, the system offers an intuitive and responsive design, making task management straightforward and efficient.",
     github_url: "https://github.com/VikasMeshram2708/TaskManagementSystem.git",
   },
   {
-    id: "4",
+    id: "5",
     title:
       "SECURE AND TRANSPARENT : FULL-STACK ONLINE VOTING SYSTEM WITH BLOCKCHAINS",
     description:
@@ -32,7 +40,7 @@ export const projectData: Project[] = [
       "https://github.com/VikasMeshram2708/Online-Voting-System-Using-Web3",
   },
   {
-    id: "5",
+    id: "6",
     title: "Inventory: Keep track of your orders",
     description:
       "The Inventory App is a robust application built using Next.js and TypeScript, offering a seamless user experience with Tailwind CSS for styling. Leveraging ShadCN for component design, the app provides an intuitive interface for adding products to the inventory. Each product entry is displayed clearly, allowing users to manage their inventory efficiently. Additionally, the app includes pagination to enhance navigation through large datasets, ensuring that users can easily access and manage their product listings. With PostgreSQL as the database and Prisma for data management, all functionalities are containerized using Docker for streamlined deployment and scalability.",
@@ -40,7 +48,7 @@ export const projectData: Project[] = [
   },
 
   {
-    id: "6",
+    id: "7",
     title: "WikiRocket: A Wikipedia Alternative",
     description:
       "WikiRocket provides a streamlined, user-friendly alternative to Wikipedia, offering a fast and intuitive platform for searching and retrieving information. The application employs advanced search algorithms to deliver accurate and relevant results. It features a clean interface, making it easy for users to navigate through vast amounts of data. WikiRocket emphasizes content accessibility and presents information in a structured, readable format, catering to a wide range of informational needs.",
