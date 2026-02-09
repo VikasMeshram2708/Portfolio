@@ -1,24 +1,25 @@
 "use client";
+
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "motion/react";
+import ValueMarquee from "./value-marquee";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen">
-      <div className="flex h-screen items-center px-6">
+    <section className="relative min-h-screen overflow-hidden">
+      {/* HERO CONTENT */}
+      <div className="flex min-h-screen items-center pb-24 md:px-6">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={{
             hidden: {},
             visible: {
-              transition: {
-                staggerChildren: 0.15,
-              },
+              transition: { staggerChildren: 0.15 },
             },
           }}
-          className="grid w-full grid-cols-1 items-center gap-10 selection:bg-neutral-400 selection:text-white md:grid-cols-2"
+          className="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-2"
         >
           {/* LEFT CONTENT */}
           <div className="space-y-6">
@@ -27,7 +28,7 @@ export default function Hero() {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{ duration: 0.5 }}
               className="text-5xl leading-[1.05] font-semibold tracking-tight md:text-7xl"
             >
               <span className="text-neutral-500">{"I'm"} a</span>
@@ -40,7 +41,6 @@ export default function Hero() {
                 hidden: { opacity: 0, y: 15 },
                 visible: { opacity: 1, y: 0 },
               }}
-              transition={{ duration: 0.45 }}
               className="max-w-xl text-sm leading-relaxed text-neutral-400 md:text-base"
             >
               Also I do exploring places, collecting ideas, and chasing
@@ -52,17 +52,19 @@ export default function Hero() {
               whileTap={{ scale: 0.97 }}
               className="relative inline-flex h-12 overflow-hidden rounded-full p-px focus:outline-none"
             >
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-
+              {" "}
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />{" "}
               <span className="inline-flex h-full w-full items-center justify-center rounded-full bg-slate-950 px-4 text-sm font-medium text-white backdrop-blur-3xl">
-                About Me
+                {" "}
+                About Me{" "}
                 <motion.span
                   whileHover={{ x: 4 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <ArrowRight className="ml-2 size-5" />
-                </motion.span>
-              </span>
+                  {" "}
+                  <ArrowRight className="ml-2 size-5" />{" "}
+                </motion.span>{" "}
+              </span>{" "}
             </motion.button>
           </div>
 
@@ -87,6 +89,11 @@ export default function Hero() {
             </motion.div>
           </div>
         </motion.div>
+      </div>
+
+      {/* MARQUEE FIXED TO HERO BOTTOM */}
+      <div className="absolute bottom-0 left-0 w-full">
+        <ValueMarquee />
       </div>
     </section>
   );
