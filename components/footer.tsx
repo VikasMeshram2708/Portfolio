@@ -13,7 +13,7 @@ const socialsData = [
     url: "https://www.instagram.com/sudo_dnf_upgrade",
   },
   {
-    label: "LinkedIN",
+    label: "LinkedIn",
     url: "https://www.linkedin.com/in/vikas-meshram",
   },
   {
@@ -39,6 +39,7 @@ export default function Footer() {
             >
               {/* Label */}
               <motion.span
+                className="text-sm font-semibold tracking-wide text-pretty"
                 variants={{
                   rest: { x: 0 },
                   hover: { x: 2 },

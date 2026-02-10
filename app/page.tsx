@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import AboutMe from "@/components/home/about-me";
 import Hero from "@/components/home/hero";
 import Projects from "@/components/home/projects";
 
@@ -9,9 +10,8 @@ export default function Home() {
         <Hero />
         {/* Projects */}
         <Projects />
-        {/* CTA */}
-        {/* Reach me */}
-        {/* Footer */}
+        {/* about me */}
+        <AboutMe />
       </Container>
     </div>
   );
