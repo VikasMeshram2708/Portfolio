@@ -104,12 +104,13 @@ export default function AboutMe() {
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="relative h-125 w-125 overflow-hidden rounded-[160px] border-6 border-[#d0ff71]"
+              className="relative aspect-[4/5] w-full max-w-[260px] overflow-hidden rounded-[160px] border-4 border-[#d0ff71] sm:max-w-[300px] md:max-w-[340px]"
             >
               <Image
-                src="/pics/me-hero.jpg" // replace with your image
+                src="/pics/me-hero.jpg"
                 alt="Vikas Meshram"
                 fill
+                sizes="(max-width: 768px) 70vw, 340px"
                 className="object-cover"
                 priority
               />
