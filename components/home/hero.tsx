@@ -4,10 +4,11 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import ValueMarquee from "./value-marquee";
+import Container from "../Container";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <Container className="relative min-h-screen overflow-hidden">
       {/* HERO CONTENT */}
       <div className="flex min-h-screen items-center pb-24 md:px-6">
         <motion.div
@@ -83,6 +84,7 @@ export default function Hero() {
                 src="/pics/tr.png"
                 alt="Avatar"
                 fill
+                sizes="(max-width: 768px) 105vw, 120vw"
                 className="object-contain"
                 priority
               />
@@ -95,6 +97,6 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-full">
         <ValueMarquee />
       </div>
-    </section>
+    </Container>
   );
 }
